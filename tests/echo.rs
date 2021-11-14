@@ -25,20 +25,20 @@ fn dies_no_args() -> TestResult {
 
 #[test]
 fn hello1() -> TestResult {
-    run(&["Hello there"], "tests/files/hello_newline1.txt")
+    run(&["Hello there"], "tests/files/hello.txt")
 }
 
 #[test]
 fn hello2() -> TestResult {
-    run(&["Hello", "there"], "tests/files/hello_newline2.txt")
+    run(&["Hello", "there"], "tests/files/hello.txt")
 }
 
 #[test]
 fn hello3() -> TestResult {
-    run(&["Hello there"], "tests/files/hello_no_newline1.txt")
+    run(&["Hello there"], "tests/files/hello.txt")
 }
 
 #[test]
 fn hello4() -> TestResult {
-    run(&["Hello", "there"], "tests/files/hello_no_newline2.txt")
+    run(&["Hello", "there"], "tests/files/hello.txt")
 }
