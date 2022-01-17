@@ -1,5 +1,5 @@
-use clap::{App, Arg};
 use anyhow::Result;
+use clap::{App, Arg};
 
 fn main() -> Result<()> {
     let matches = App::new("echo_rust")
