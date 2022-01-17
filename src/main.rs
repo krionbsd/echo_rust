@@ -1,7 +1,9 @@
 use anyhow::Result;
 use clap::{App, Arg};
 
-fn main() -> Result<()> {
+type TestResult = Result<(), Box<dyn std::error::Error>>;
+
+fn main() -> TestResult {
     let matches = App::new("echo_rust")
         .version("0.1")
         .author("KP")
