@@ -1,6 +1,7 @@
 use clap::{App, Arg};
+use anyhow::Result;
 
-fn main() {
+fn main() -> Result<()> {
     let matches = App::new("echo_rust")
         .version("0.1")
         .author("KP")
@@ -24,4 +25,5 @@ fn main() {
     let rm_line = matches.is_present("rm_line");
 
     print!("{}{}", text.join(" "), if rm_line { "" } else { "\n" });
+    Ok(())
 }
